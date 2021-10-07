@@ -12,6 +12,6 @@ jobs:
         with:
           node-version: '14.x'
       - run: npm install    
-      - run: npm test:backend
+      - run: npm run test:backend
       - run: cd client && npm install
-      - run: cd .. && npm test:frontend
+      - run: cd .. && npm run test:frontend
