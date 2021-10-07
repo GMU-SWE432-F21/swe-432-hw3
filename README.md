@@ -16,6 +16,11 @@
 
 **General App Description:** This web application provides information about cities loaded from a centralized database at www.citiesinfo.org. This app can help people find reference information about various city attributes such as population, capitals, and other demographic information.
 
+* **Endpoint 1:** Retrieve a city from our Washington DC Database
+  * API Endpoint: GET /city/:cityID
+  * Example: GET /city/21
+  * Expected Output: "Fairfax"
+
 * **Component 1:** City List Component
 	* API Endpoint(s):
   		* GET /cities
