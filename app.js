@@ -1,9 +1,19 @@
 const express = require('express')
 const fetch = require('node-fetch')
 const path = require('path');
+//const admin = require('firebase-admin'); // uncomment to use Firebase
 const app = express()
 
 app.use(express.static(path.join(__dirname, 'client/build')));
+
+// Firebase starter code appears below
+
+// let serviceAccount = require('[YOUR JSON FILE PATH HERE]');
+// admin.initializeApp({
+// credential: admin.credential.cert(serviceAccount)
+// });
+// let db = admin.firestore();
+
 
 const cities = ["Fairfax", "Vienna", "Falls Church", "Arlington"];
 
