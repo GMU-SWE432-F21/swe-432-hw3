@@ -7,7 +7,7 @@
     "test:backend": "jest --findRelatedTests app.test.js",
     "test:frontend": "cd client && npm test",
     "start": "npm start",
-    "heroku-postbuild": "cd client && npm install && npm build run"
+    "heroku-postbuild": "cd client && npm install && npm start"
   },
   "repository": {
     "type": "git",
