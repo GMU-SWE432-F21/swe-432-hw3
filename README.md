@@ -56,7 +56,7 @@ Check out [our instructions](https://cs.gmu.edu/~kpmoran/teaching/swe-432-f21/hw
 
 ## Testing with Continuous Integration
 
-**Note that you are not required to test your project with Jest for HW3, however, we have enabled this functionality in case you would like to use it.**
+**Note that you are not required to test your project with Jest for HW3, however, we have enabled this functionality in case you would like to use it. If you would like to remove the tests, you can remove the `.github` directory from the repo.**
 
 Currently, this repo is set up to run the Jest tests in the `app.test.js` file upon each commit to the `main` branch of the repository. If any of the tests fail, the CI process will fail and this will be indicated with red "X" on the main page of your repo, and GitHub will likely also send you a notification email that your automated tests have failed.
 
