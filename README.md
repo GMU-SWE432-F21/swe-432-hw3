@@ -38,6 +38,7 @@ Make sure you have [Node.js](http://nodejs.org/) and (optionally) the [Heroku CL
 ```sh
 $ git clone <repo-name>
 $ cd <repo-name>
+$ npm install
 $ npm run setup
 $ npm start
 ```
