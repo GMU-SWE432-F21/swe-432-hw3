@@ -27,7 +27,7 @@ This repo contains a barebones Node.js app using [Express 4](http://expressjs.co
 
 ## Homework Assignment #3 Detailed Instructions
 
-You can find the deatiled instructions for HW Assignment #2 on the [course webpage](https://cs.gmu.edu/~kpmoran/teaching/swe-432-f21/hw3). Please read these carefully before getting started.
+You can find the deatiled instructions for HW Assignment #3 on the [course webpage](https://cs.gmu.edu/~kpmoran/teaching/swe-432-f21/hw3). Please read these carefully before getting started.
 
 ## Running this Project Locally
 
