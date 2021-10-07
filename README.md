@@ -25,7 +25,7 @@
 
 This repo contains a barebones Node.js app using [Express 4](http://expressjs.com/). You will use this as the "base" version of your Microserivce application for HW Assignment #2. You will simply create a copy of this repo through GitHub classroom and then work in that repo. 
 
-## Homework Assignment #3 Detailed Instructions
+## Homework Assignment 3 Detailed Instructions
 
 You can find the deatiled instructions for HW Assignment #3 on the [course webpage](https://cs.gmu.edu/~kpmoran/teaching/swe-432-f21/hw3). Please read these carefully before getting started.
 
@@ -38,15 +38,11 @@ Make sure you have [Node.js](http://nodejs.org/) and (optionally) the [Heroku CL
 ```sh
 $ git clone <repo-name>
 $ cd <repo-name>
-$ npm install
-$ npm start %starts the express backend on localhost:5000
-% open a second terminal in same repo folder
-$ cd client
-$ npm install
-$ npm start % starts the React frontend at localhost:3000
+$ npm run setup
+$ npm start
 ```
 
-After executing these commands, your express backend should now be running on [localhost:5000](http://localhost:5000/), and your React frontend should be running at [localhost:3000](http://localhost:3000/). You can visit either of these pages in your web browser to view your backend micro-service or front-end user interface. Note that the address of the express micro-service has changed since the last homework assignment - it is now running on localhost:5000 whereas the frontend is now running on localhost:3000. 
+After executing these commands, your express backend and React frontend should now be running on [localhost:5000](http://localhost:5000/). You can visit this page in your web browser to view your front-end user interface. You can also access your microservice endpoints (e.g., [localhost:5000/cities](http://localhost:5000/cities). Please see the [HW #3 instructions](https://cs.gmu.edu/~kpmoran/teaching/swe-432-f21/hw3) for more information on how this works.
 
 ## Deploying to Heroku
 

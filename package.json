@@ -6,7 +6,8 @@
   "scripts": {
     "test:backend": "jest --findRelatedTests app.test.js",
     "test:frontend": "cd client && npm test",
-    "start": "npm start",
+    "setup": "cd client && npm install && npm run-script build && cd ..",
+    "start": "node server.js",
     "heroku-postbuild": "cd client && npm install && npm run-script build"
   },
   "repository": {
