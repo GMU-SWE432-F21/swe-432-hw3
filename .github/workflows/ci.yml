@@ -15,8 +15,8 @@ jobs:
       - run: cd client && npm install
         env:
           FIREBASE: ${{ secrets.FIREBASE }}
-      - run: echo $FIREBASE > ./firebase.json
-      - run: cat ./firebase.json
+      - run: echo $FIREBASE > firebase.json
+      - run: cat firebase.json
       - run: npm run test:backend
       - run: npm run test:frontend
         env:
