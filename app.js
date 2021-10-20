@@ -1,7 +1,7 @@
 const express = require('express')
 const fetch = require('node-fetch')
 const path = require('path');
-//const admin = require('firebase-admin'); // uncomment to use Firebase
+const admin = require('firebase-admin'); // uncomment to use Firebase
 const app = express()
 
 app.use(express.static(path.join(__dirname, 'client/build')));
