@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Firebase starter code appears below
 
-let serviceAccount = require('./firebase.json');
+let serviceAccount = require(process.env.FIREBASE);
 
 admin.initializeApp({
 credential: admin.credential.cert(serviceAccount)
