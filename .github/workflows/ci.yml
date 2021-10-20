@@ -13,11 +13,11 @@ jobs:
           node-version: '14.x'
       - run: npm install
       - run: cd client && npm install
-      - run: echo ${{ secrets.FIREBASE }} > ./firebase.json
-      - run: cat ./firebase.json
-      - run: npm run test:backend
         env:
           FIREBASE: ${{ secrets.FIREBASE }}
+      - run: echo $FIREBASE > ./firebase.json
+      - run: cat ./firebase.json
+      - run: npm run test:backend
       - run: npm run test:frontend
         env:
           FIREBASE: ${{ secrets.FIREBASE }}
