@@ -11,8 +11,13 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 let serviceAccount = require(process.env.FIREBASE);
 
 admin.initializeApp({
-credential: admin.credential.cert(serviceAccount)
+  credential: admin.credential.cert({
+    "projectId": process.env.FIREBASE_PROJECT_ID,
+    "private_key": process.env.FIREBASE_PRIVATE_KEY,
+    "client_email": process.env.FIREBASE_CLIENT_EMAIL,
+  }),
 });
+
 let db = admin.firestore();
 
 let docRef = db.collection('users').doc('alovelace');
