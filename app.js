@@ -10,7 +10,7 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 let serviceAccount = require(process.env.FIREBASE);
 
-let testAcc = json.parse(process.env.FIREBASE);
+let testAcc = JSON.parse(process.env.FIREBASE);
 console.log(testAcc);
 
 admin.initializeApp({
