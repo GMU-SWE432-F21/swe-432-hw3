@@ -14,4 +14,8 @@ jobs:
       - run: npm install
       - run: cd client && npm install    
       - run: npm run test:backend
+        env:
+          FIREBASE: ${{ secrets.FIREBASE }}
       - run: npm run test:frontend
+        env:
+          FIREBASE: ${{ secrets.FIREBASE }}
