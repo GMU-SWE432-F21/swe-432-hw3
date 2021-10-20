@@ -10,6 +10,8 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 let serviceAccount = require(process.env.FIREBASE);
 
+console.log(serviceAccount);
+
 admin.initializeApp({
 credential: admin.credential.cert(serviceAccount)
 });
