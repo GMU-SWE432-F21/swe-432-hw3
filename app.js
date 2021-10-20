@@ -8,12 +8,19 @@ app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Firebase starter code appears below
 
-// let serviceAccount = require('[YOUR JSON FILE PATH HERE]');
-// admin.initializeApp({
-// credential: admin.credential.cert(serviceAccount)
-// });
-// let db = admin.firestore();
+let serviceAccount = process.env.FIREBASE;
+admin.initializeApp({
+credential: admin.credential.cert(serviceAccount)
+});
+let db = admin.firestore();
 
+let docRef = db.collection('users').doc('alovelace');
+
+let setAda = docRef.set({
+    first: 'Ada',
+    last: 'Lovelace',
+    born: 1815
+});
 
 const cities = ["Fairfax", "Vienna", "Falls Church", "Arlington"];
 
