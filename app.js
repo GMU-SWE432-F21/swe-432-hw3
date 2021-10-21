@@ -1,32 +1,19 @@
 const express = require('express')
 const fetch = require('node-fetch')
 const path = require('path');
-const admin = require('firebase-admin'); // uncomment to use Firebase
+//const admin = require('firebase-admin'); // uncomment to use Firebase
 const app = express()
 
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 // Firebase starter code appears below
 
-let serviceAccount = require(process.env.FIREBASE);
+// let serviceAccount = require('[YOUR JSON FILE PATH HERE]');
+// admin.initializeApp({
+// credential: admin.credential.cert(serviceAccount)
+// });
+// let db = admin.firestore();
 
-admin.initializeApp({
-  credential: admin.credential.cert({
-    "project_id": process.env.FIREBASE_PROJECT_ID,
-    "private_key": process.env.FIREBASE_PRIVATE_KEY,
-    "client_email": process.env.FIREBASE_CLIENT_EMAIL,
-  }),
-});
-
-let db = admin.firestore();
-
-let docRef = db.collection('users').doc('alovelace');
-
-let setAda = docRef.set({
-    first: 'Ada',
-    last: 'Lovelace',
-    born: 1815
-});
 
 const cities = ["Fairfax", "Vienna", "Falls Church", "Arlington"];
 
